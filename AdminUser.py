@@ -19,4 +19,7 @@ def WhichAccount():
     if(account == ""):
         return render_template("AdminUser.html");
     else:
-        return render_template("ExtractInfo.html");
+        if(account == 1):
+            return render_template("ExtractAdmin.html");
+        else:
+            return render_template("ExtractUser.html");
