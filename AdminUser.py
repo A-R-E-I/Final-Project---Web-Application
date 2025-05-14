@@ -14,13 +14,13 @@ def main():
 
 @app.route("/select",methods=["POST"])
 def WhichAccount():
-    filepath = fileDir + "\\AUpass.py";
-    filenamepath = {
-        "__file__":filepath,
-        "__name__":"__main__",
-        };
-    with open(filepath,"rb") as file:
-        exec(compile(file.read(), filepath, "exec"),filenamepath);
+    global account
+    account = request.form.get("txtaccount")
+    if(account == ""):
+        return render_template("AdminUser.html");
+    else:
+        return render_template("ExtractInfo.html");
 
-    if __name__=="__main__":
-        main();
+    
+if __name__=="__main__":
+    app.run();
