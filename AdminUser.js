@@ -2,16 +2,16 @@ window.addEventListener("load",addListener);
 
 function addListener()
 {
-	document.getElementById("btnadmin").addEventListener("click",Admin);
-	document.getElementById("btnuser").addEventListener("click",User);
+	document.getElementById("entAct").addEventListener("click",selectAct);
+	document.getElementById("entExit").addEventListener("click",Exit);
 }
 
-function Admin()
+function selectAct()
 {
-	window.location.href="ExtractAdmin.html";
+	numAct = document.getElementById("WhatAct").value;
 }
 
-function User()
+function Exit()
 {
 	window.location.href="ExtractUser.html";
 }
