@@ -1,0 +1,20 @@
+body 
+{
+    background-image:url("https://wallpapers.com/images/hd/simple-pink-1600-x-900-background-fx8mnzaxvh4ak0jt.jpg");
+    background-size:100%; 
+    font: sans-serif; 
+    text-align: center;
+    
+}
+
+button 
+{
+    padding: 40px;
+    width: 600px;
+    background-color: #d093b5; 
+    color: #550c34;
+    font-size:45px;
+    font-family: merriweather;
+	margin: 20px auto;
+	zoom:120%;
+}
