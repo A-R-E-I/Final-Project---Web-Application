@@ -8,10 +8,12 @@ function addListener()
 
 function selectAct()
 {
-	numAct = document.getElementById("WhatAct").value;
+	numAct = document.getElementById("WhatAccount").value;
+	if(numAct == ""):
+		window.location.href="AdminUser.html";
 }
 
 function Exit()
 {
-	window.location.href="ExtractUser.html";
+	window.location.href="RUsure.html";
 }

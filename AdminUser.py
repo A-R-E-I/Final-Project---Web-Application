@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import os.path
+import sys
 from os import path
 
 global whichfilename;
@@ -15,7 +16,7 @@ def main():
 @app.route("/select",methods=["POST"])
 def WhichAccount():
     global account
-    account = request.form.get("txtaccount")
+    account = request.form.get("WhatAccount")
     if(account == ""):
         return render_template("AdminUser.html");
     else:
