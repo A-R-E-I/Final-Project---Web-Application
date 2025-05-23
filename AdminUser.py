@@ -17,10 +17,10 @@ def main():
 def WhichAccount():
     global account
     account = request.form.get("WhatAccount")
-    if(account == ""):
-        return render_template("AdminUser.html");
+    if(account == "AdminAct"):
+        return render_template("ExtractAdmin.html");
     else:
-        return render_template("ExtractInfo.html");
+        return render_template("ExtractUser.html");
 
     
 if __name__=="__main__":

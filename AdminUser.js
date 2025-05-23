@@ -15,5 +15,5 @@ function selectAct()
 
 function Exit()
 {
-	window.location.href="RUsure.html";
+	window.location.href = "RUsure.html";
 }
