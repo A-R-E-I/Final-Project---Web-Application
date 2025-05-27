@@ -10,7 +10,7 @@ function selectAct()
 {
 	numAct = document.getElementById("WhatAccount").value;
 	if(numAct == ""):
-		window.location.href="AdminUser.html";
+		window.location.href = "AdminUser.html";
 }
 
 function Exit()

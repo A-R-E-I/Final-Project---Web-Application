@@ -17,10 +17,14 @@ def main():
 def WhichAccount():
     global account
     account = request.form.get("WhatAccount")
+    YNexit();
     if(account == "AdminAct"):
         return render_template("ExtractAdmin.html");
     else:
         return render_template("ExtractUser.html");
+
+def YNexit():
+    
 
     
 if __name__=="__main__":
