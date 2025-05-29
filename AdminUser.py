@@ -24,6 +24,12 @@ def WhichAccount():
         return render_template("ExtractUser.html");
 
 def YNexit():
+    UserExit = request.form.get("ExitYN")
+    if(UserExit == "entyes"):
+        return render_template("EndPro.html");
+        sys.exit()
+    else:
+        return render_template("AdminUser.html")
     
 
     
