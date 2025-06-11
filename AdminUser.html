@@ -3,24 +3,21 @@
 		<title>levels of pi</title>
 		<link rel="shortcut icon" type = "x-icon" href = ""></link>
 		<link rel="stylesheet" type="text/css" href="AdminStyle.css">
- 		<script src="AdminUser.js"></script>
 	</head>
 	<body>
 	<form action="/select" method="post">
 		<div id="menuselect">
-			<h1>Welcome to levels of pi </h1>  
+			<h1>Welcome to levels of pi</h1>  
 			<br>
 		
 			<h3>Please select one of the two options</h3>
 			
-			<select id="WhatAccount">
+			<select id="WhatAccount" name="WhatAccount">
 			 	<option value="AdminAct">Admin</option>
 			 	<option value="UserAct">User</option>
+				<option value="Leave">Exit</option>
 		 	</select>
 		 	<button type="submit" id="entAct">Submit</button>
-			<br>
-			<br>
-			<button type="submit" id="entExit">Exit</button>
 		</div>
 	</body>
 </html>
