@@ -1,15 +1,26 @@
 <html>
 	<head>
-		<title>levels of pi</title>
-		<link rel="shortcut icon" type = "x-icon" href = ""></link>
-		<link rel="stylesheet" type="text/css" href="AdminStyle.css">
- 		<script src="ExitPro.js"></script>
+		<title>Levels of pi</title>
+		<link rel="stylesheet" href="\static\loginCust.css">
+		<script src="\static\Extract.js"></script>
 	</head>
 	<body>
-			<h3>Are you sure you want to Exit?</h3>
-			
-		 	<button type="submit" id="entyes">yes</button>
-			
-			<button type="submit" id="entno">no</button>
+		<form action="/info" method="post">
+		<div id="login">
+			<table id="tbllogin">
+				<tr>
+					<td><label id="lblusername">Username:</label></td>
+					<td><input id="txtusername" name="txtusername"></td>
+				</tr>
+				<tr>
+					<td><label id="lblpassword">Password:</label></td>
+					<td><input id="txtpassword" name="txtpassword"></td>
+				</tr>
+				<tr>
+					<td><button id="btnsubmit">Submit</button></td>
+				</tr>	
+			</table>
+		</div>
+		</form>
 	</body>
 </html>

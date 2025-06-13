@@ -3,14 +3,12 @@
 		<title>levels of pi</title>
 		<link rel="shortcut icon" type = "x-icon" href = ""></link>
 		<link rel="stylesheet" type="text/css" href="AdminStyle.css">
-		<script src="RUsure.js"></script>
 	</head>
 	<body>
-	<form action="/select" method="post">
-			<h3>Are you sure you want to Exit?</h3>
-			
-		 	<button type="submit" id="entyes">yes</button>
-			<button type="submit" id="entno">no</button>
-	</form>
+		<h3>Are you sure you want to Exit?</h3>
+		<form action="/exit" method="post">	
+		 	<button type="submit" name="confirm" value="yes" id="entyes">yes</button>
+			<button type="submit" name="confirm" value="no" id="entno">no</button>
+		</form>
 	</body>
 </html>
